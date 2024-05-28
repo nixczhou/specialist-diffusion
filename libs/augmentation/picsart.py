@@ -197,7 +197,8 @@ class PicsartData(torch.utils.data.Dataset):
             T.RandomCrop(self.image_size),            
         ])
 
-        self.similar_captions = torch.load(clip_similars, map_location='cpu')
+        # self.similar_captions = torch.load(clip_similars, map_location='cpu')
+        self.similar_captions = ''
 
     def __len__(self):
         return len(self.key_list)

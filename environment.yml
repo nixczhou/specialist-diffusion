@@ -1,6 +1,7 @@
 name: sd
 channels:
   - pytorch
+  - nvidia
   - conda-forge
   - defaults
 dependencies:
@@ -9,10 +10,10 @@ dependencies:
     - diffusers  
     - tqdm
     - opencv-python
-    - transformers==^4.24.0
+    - transformers
   - numpy  
   - pytorch 
   - torchvision 
   - torchaudio 
   - ftfy
-  - cudatoolkit=11.6
+  - pytorch-cuda
